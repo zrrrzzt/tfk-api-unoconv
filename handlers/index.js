@@ -29,7 +29,6 @@ function handleUpload (request, reply) {
       if (err) {
         reply(err)
       } else {
-
         unoconv.convert(path, convertToFormat, function (err, result) {
           if (err) {
             reply(err)
