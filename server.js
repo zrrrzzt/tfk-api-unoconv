@@ -1,6 +1,7 @@
 'use strict'
 
 var Hapi = require('hapi')
+var Inert = require('inert');
 var server = new Hapi.Server()
 var config = require('./config')
 var unoconvService = require('./index')
@@ -13,6 +14,10 @@ server.connection({
 server.register([
   {
     register: unoconvService,
+    options: {}
+  },
+  {
+    register: Inert,
     options: {}
   }
 ], function (err) {

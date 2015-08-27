@@ -4,20 +4,18 @@ var fs = require('fs')
 var uuid = require('uuid')
 var unoconv = require('unoconv2')
 
-function createFileName (filename) {
-  var nameArray = filename.split('.')
-  var fileEnding = nameArray.pop()
-  var newName = uuid.v4()
-  return newName + '.' + fileEnding
-}
-
 function handleUpload (request, reply) {
   var convertToFormat = request.params.format
   var data = request.payload
   if (data.file) {
-    var temporaryName = createFileName(data.file.hapi.filename)
-    var path = process.cwd() + "/uploads/" + temporaryName
-    var file = fs.createWriteStream(path)
+    var nameArray = data.file.hapi.filename.split('.')
+    var newNameConverted = nameArray.join('.') + '.' + convertToFormat
+    var fileEndingOriginal = nameArray.pop()
+    var temporaryName = uuid.v4()
+    var pathPre = process.cwd() + "/uploads/" + temporaryName
+    var fileNameTempOriginal = pathPre + '.' + fileEndingOriginal
+    var fileNameTempConverted = pathPre + '.' + convertToFormat
+    var file = fs.createWriteStream(fileNameTempOriginal)
 
     file.on('error', function (err) {
       console.error(err)
@@ -29,11 +27,22 @@ function handleUpload (request, reply) {
       if (err) {
         reply(err)
       } else {
-        unoconv.convert(path, convertToFormat, function (err, result) {
+        unoconv.convert(fileNameTempOriginal, convertToFormat, function (err, result) {
           if (err) {
             reply(err)
           } else {
-            reply(result)
+            fs.writeFile(fileNameTempConverted, result, function(err){
+              if (err) {
+                reply(err)
+              } else {
+                reply.file(fileNameTempConverted, {
+                  filename: newNameConverted
+                }).on('finish', function(){
+                  fs.unlink(fileNameTempOriginal)
+                  fs.unlink(fileNameTempConverted)
+                })
+              }
+            })
           }
         })
 
