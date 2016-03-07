@@ -14,7 +14,6 @@ function handleUpload (request, reply) {
     var temporaryName = uuid.v4()
     var pathPre = process.cwd() + '/uploads/' + temporaryName
     var fileNameTempOriginal = pathPre + '.' + fileEndingOriginal
-    var fileNameTempConverted = pathPre + '.' + convertToFormat
     var file = fs.createWriteStream(fileNameTempOriginal)
 
     file.on('error', function (err) {
@@ -31,18 +30,11 @@ function handleUpload (request, reply) {
           if (err) {
             reply(err)
           } else {
-            fs.writeFile(fileNameTempConverted, result, function (err) {
-              if (err) {
-                reply(err)
-              } else {
-                reply.file(fileNameTempConverted, {
-                  filename: newNameConverted
-                }).on('finish', function () {
-                  fs.unlink(fileNameTempOriginal)
-                  fs.unlink(fileNameTempConverted)
-                })
-              }
-            })
+            console.log('finished converting')
+            reply(result)
+              .on('finish', function () {
+                fs.unlink(fileNameTempOriginal)
+              })
           }
         })
       }
