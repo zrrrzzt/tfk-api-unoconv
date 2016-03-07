@@ -1,5 +1,6 @@
 'use strict'
 
+var config = require('../config')
 var handlers = require('../handlers')
 
 var routes = [
@@ -10,9 +11,9 @@ var routes = [
       payload: {
         output: 'stream',
         parse: true,
-        allow: 'multipart/form-data'
+        allow: 'multipart/form-data',
+        maxBytes: parseInt(config.PAYLOAD_MAX_SIZE, 10)
       },
-
       handler: handlers.handleUpload
     }
   }

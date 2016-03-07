@@ -7,7 +7,7 @@ var config = require('./config')
 var unoconvService = require('./index')
 
 server.connection({
-  port:config.SERVER_PORT,
+  port: parseInt(config.SERVER_PORT, 10),
   routes:{cors:{credentials:true}}
 })
 
