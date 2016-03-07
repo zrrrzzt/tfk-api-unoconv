@@ -1,14 +1,18 @@
 'use strict'
 
 var Hapi = require('hapi')
-var Inert = require('inert');
+var Inert = require('inert')
 var server = new Hapi.Server()
 var config = require('./config')
 var unoconvService = require('./index')
 
 server.connection({
   port: parseInt(config.SERVER_PORT, 10),
-  routes:{cors:{credentials:true}}
+  routes: {
+    cors: {
+      credentials: true
+    }
+  }
 })
 
 server.register([
@@ -26,7 +30,6 @@ server.register([
   }
 })
 
-
 function startServer () {
   server.start(function () {
     console.log('Server running at:', server.info.uri)
@@ -41,4 +44,4 @@ function stopServer () {
 
 module.exports.start = startServer
 
-module.exports.stop =  stopServer
+module.exports.stop = stopServer

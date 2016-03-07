@@ -1,15 +1,13 @@
-'use strict';
+'use strict'
 
-var routes = require('./routes');
+var routes = require('./routes')
 
-exports.register = function(server, options, next) {
+exports.register = function (server, options, next) {
+  server.route(routes)
 
-  server.route(routes);
-
-  next();
-
-};
+  next()
+}
 
 exports.register.attributes = {
   pkg: require('./package.json')
-};
+}
