@@ -34,9 +34,9 @@
     "uuid": "^2.0.1"
   },
   "devDependencies": {
-    "coveralls": "^2.11.8",
+    "coveralls": "2.11.14",
     "nsp": "2.6.1",
-    "standard": "^6.0.7",
-    "tap": "^5.7.0"
+    "standard": "8.1.0",
+    "tap": "7.1.2"
   }
 }
