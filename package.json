@@ -13,7 +13,7 @@
   "homepage": "https://github.com/zrrrzzt/tfk-api-unoconv",
   "main": "index.js",
   "engines": {
-    "node": ">=4.4.7"
+    "node": ">=4.5.0"
   },
   "scripts": {
     "test": "standard && tap --reporter=spec test/*.js",
