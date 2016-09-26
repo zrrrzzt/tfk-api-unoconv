@@ -21,7 +21,14 @@ module.exports = [
     method: 'GET',
     path: '/unoconv/formats',
     config: {
-      handler: handlers.showCapabilities
+      handler: handlers.showFormats
+    }
+  },
+  {
+    method: 'GET',
+    path: '/unoconv/formats/{type}',
+    config: {
+      handler: handlers.showFormat
     }
   }
 ]

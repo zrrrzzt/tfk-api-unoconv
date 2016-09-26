@@ -3,6 +3,7 @@
 const fs = require('fs')
 const uuid = require('uuid')
 const unoconv = require('unoconv2')
+const formats = require('../lib/data/formats.json')
 
 module.exports.handleUpload = (request, reply) => {
   const convertToFormat = request.params.format
@@ -41,13 +42,16 @@ module.exports.handleUpload = (request, reply) => {
   }
 }
 
-module.exports.showCapabilities = (request, reply) => {
-  unoconv.detectSupportedFormats((error, result) => {
-    if (error) {
-      console.error(error)
-      reply(error)
-    } else {
-      reply(result)
-    }
-  })
+module.exports.showFormats = (request, reply) => {
+  reply(formats)
+}
+
+module.exports.showFormat = (request, reply) => {
+  const params = request.params
+  const format = params ? formats[request.params.type] : false
+  if (!format) {
+    reply('Format type not found').code(404)
+  } else {
+    reply(format)
+  }
 }
