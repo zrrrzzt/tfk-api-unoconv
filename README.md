@@ -26,12 +26,18 @@ API for the webservice is /unoconv/{format-to-convert-to} so a docx to pdf would
 $ curl --form file=@myfile.docx http://192.168.99.100/unoconv/pdf > myfile.pdf
 ```
 
+### Formats
+
+To see all possible formats for convertion visit ```/unoconv/formats```
+
+To see formats for a given type ```/unoconv/formats/{document|graphics|presentation|spreadsheet}```
+
 ## Environment
 
 You can change the webservice port and filesize-limit by changing environment variables.
 
 SERVER_PORT default is 3000
-
+``
 PAYLOAD_MAX_SIZE default is 1048576 (1 MB)
 
 Change it in the Dockerfile or create an env-file and load it at containerstart
