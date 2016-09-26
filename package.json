@@ -16,7 +16,7 @@
     "node": ">=4.5.0"
   },
   "scripts": {
-    "test": "standard && tap --reporter=spec test/*.js",
+    "test": "standard && nsp check && tap --reporter=spec test/*.js",
     "coverage": "tap test/*.js --coverage",
     "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls",
     "start": "node standalone.js",
@@ -35,6 +35,7 @@
   },
   "devDependencies": {
     "coveralls": "^2.11.8",
+    "nsp": "2.6.1",
     "standard": "^6.0.7",
     "tap": "^5.7.0"
   }
