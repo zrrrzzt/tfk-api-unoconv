@@ -20,7 +20,8 @@
     "coverage": "tap test/*.js --coverage",
     "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls",
     "start": "node standalone.js",
-    "setup": "mkdir uploads && npm install && node setup.js"
+    "setup": "mkdir uploads && npm install && node setup.js",
+    "standard-fix": "standard --fix"
   },
   "repository": {
     "type": "git",
