@@ -1,38 +1,37 @@
 'use strict'
 
-var fs = require('fs')
-var uuid = require('uuid')
-var unoconv = require('unoconv2')
+const fs = require('fs')
+const uuid = require('uuid')
+const unoconv = require('unoconv2')
 
-function handleUpload (request, reply) {
-  var convertToFormat = request.params.format
-  var data = request.payload
+module.exports.handleUpload = (request, reply) => {
+  const convertToFormat = request.params.format
+  const data = request.payload
   if (data.file) {
-    var nameArray = data.file.hapi.filename.split('.')
-    var newNameConverted = nameArray.join('.') + '.' + convertToFormat
-    var fileEndingOriginal = nameArray.pop()
-    var temporaryName = uuid.v4()
-    var pathPre = process.cwd() + '/uploads/' + temporaryName
-    var fileNameTempOriginal = pathPre + '.' + fileEndingOriginal
-    var file = fs.createWriteStream(fileNameTempOriginal)
+    const nameArray = data.file.hapi.filename.split('.')
+    const fileEndingOriginal = nameArray.pop()
+    const temporaryName = uuid.v4()
+    const pathPre = process.cwd() + '/uploads/' + temporaryName
+    const fileNameTempOriginal = pathPre + '.' + fileEndingOriginal
+    const file = fs.createWriteStream(fileNameTempOriginal)
 
-    file.on('error', function (err) {
-      console.error(err)
+    file.on('error', (error) => {
+      console.error(error)
     })
 
     data.file.pipe(file)
 
-    data.file.on('end', function (err) {
+    data.file.on('end', (err) => {
       if (err) {
         reply(err)
       } else {
-        unoconv.convert(fileNameTempOriginal, convertToFormat, function (err, result) {
+        unoconv.convert(fileNameTempOriginal, convertToFormat, (err, result) => {
           if (err) {
             reply(err)
           } else {
             console.log('finished converting')
             reply(result)
-              .on('finish', function () {
+              .on('finish', () => {
                 fs.unlink(fileNameTempOriginal)
               })
           }
@@ -42,4 +41,13 @@ function handleUpload (request, reply) {
   }
 }
 
-module.exports.handleUpload = handleUpload
+module.exports.showCapabilities = (request, reply) => {
+  unoconv.detectSupportedFormats((error, result) => {
+    if (error) {
+      console.error(error)
+      reply(error)
+    } else {
+      reply(result)
+    }
+  })
+}

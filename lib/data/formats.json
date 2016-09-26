@@ -1,0 +1,808 @@
+{
+  "document": [
+    {
+      "format": "bib",
+      "extension": "bib",
+      "description": "BibTeX",
+      "mime": "application/octet-stream"
+    },
+    {
+      "format": "doc",
+      "extension": "doc",
+      "description": "Microsoft Word 97/2000/XP",
+      "mime": "application/msword"
+    },
+    {
+      "format": "doc6",
+      "extension": "doc",
+      "description": "Microsoft Word 6.0",
+      "mime": "application/msword"
+    },
+    {
+      "format": "doc95",
+      "extension": "doc",
+      "description": "Microsoft Word 95",
+      "mime": "application/msword"
+    },
+    {
+      "format": "docbook",
+      "extension": "xml",
+      "description": "DocBook",
+      "mime": "application/xml"
+    },
+    {
+      "format": "docx",
+      "extension": "docx",
+      "description": "Microsoft Office Open XML",
+      "mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    },
+    {
+      "format": "docx7",
+      "extension": "docx",
+      "description": "Microsoft Office Open XML",
+      "mime": "application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+    },
+    {
+      "format": "fodt",
+      "extension": "fodt",
+      "description": "OpenDocument Text (Flat XML)",
+      "mime": "application/octet-stream"
+    },
+    {
+      "format": "html",
+      "extension": "html",
+      "description": "HTML Document (OpenOffice.org Writer)",
+      "mime": "text/html"
+    },
+    {
+      "format": "latex",
+      "extension": "ltx",
+      "description": "LaTeX 2e",
+      "mime": "application/octet-stream"
+    },
+    {
+      "format": "mediawiki",
+      "extension": "txt",
+      "description": "MediaWiki",
+      "mime": "text/plain"
+    },
+    {
+      "format": "odt",
+      "extension": "odt",
+      "description": "ODF Text Document",
+      "mime": "application/vnd.oasis.opendocument.text"
+    },
+    {
+      "format": "ooxml",
+      "extension": "xml",
+      "description": "Microsoft Office Open XML",
+      "mime": "application/xml"
+    },
+    {
+      "format": "ott",
+      "extension": "ott",
+      "description": "Open Document Text",
+      "mime": "application/vnd.oasis.opendocument.text-template"
+    },
+    {
+      "format": "pdb",
+      "extension": "pdb",
+      "description": "AportisDoc (Palm)",
+      "mime": "application/vnd.palm"
+    },
+    {
+      "format": "pdf",
+      "extension": "pdf",
+      "description": "Portable Document Format",
+      "mime": "application/pdf"
+    },
+    {
+      "format": "psw",
+      "extension": "psw",
+      "description": "Pocket Word",
+      "mime": "application/octet-stream"
+    },
+    {
+      "format": "rtf",
+      "extension": "rtf",
+      "description": "Rich Text Format",
+      "mime": "application/rtf"
+    },
+    {
+      "format": "sdw",
+      "extension": "sdw",
+      "description": "StarWriter 5.0",
+      "mime": "application/vnd.stardivision.writer"
+    },
+    {
+      "format": "sdw4",
+      "extension": "sdw",
+      "description": "StarWriter 4.0",
+      "mime": "application/vnd.stardivision.writer"
+    },
+    {
+      "format": "sdw3",
+      "extension": "sdw",
+      "description": "StarWriter 3.0",
+      "mime": "application/vnd.stardivision.writer"
+    },
+    {
+      "format": "stw",
+      "extension": "stw",
+      "description": "Open Office.org 1.0 Text Document Template",
+      "mime": "application/vnd.sun.xml.writer.template"
+    },
+    {
+      "format": "sxw",
+      "extension": "sxw",
+      "description": "Open Office.org 1.0 Text Document",
+      "mime": "application/vnd.sun.xml.writer"
+    },
+    {
+      "format": "text",
+      "extension": "txt",
+      "description": "Text Encoded",
+      "mime": "text/plain"
+    },
+    {
+      "format": "txt",
+      "extension": "txt",
+      "description": "Text",
+      "mime": "text/plain"
+    },
+    {
+      "format": "uot",
+      "extension": "uot",
+      "description": "Unified Office Format text",
+      "mime": "application/octet-stream"
+    },
+    {
+      "format": "vor",
+      "extension": "vor",
+      "description": "StarWriter 5.0 Template",
+      "mime": "application/vnd.stardivision.writer"
+    },
+    {
+      "format": "vor4",
+      "extension": "vor",
+      "description": "StarWriter 4.0 Template",
+      "mime": "application/vnd.stardivision.writer"
+    },
+    {
+      "format": "vor3",
+      "extension": "vor",
+      "description": "StarWriter 3.0 Template",
+      "mime": "application/vnd.stardivision.writer"
+    },
+    {
+      "format": "wps",
+      "extension": "wps",
+      "description": "Microsoft Works",
+      "mime": "application/vnd.ms-works"
+    },
+    {
+      "format": "xhtml",
+      "extension": "html",
+      "description": "XHTML Document",
+      "mime": "text/html"
+    }
+  ],
+  "graphics": [
+    {
+      "format": "bmp",
+      "extension": "bmp",
+      "description": "Windows Bitmap",
+      "mime": "image/bmp"
+    },
+    {
+      "format": "emf",
+      "extension": "emf",
+      "description": "Enhanced Metafile",
+      "mime": "application/x-msmetafile"
+    },
+    {
+      "format": "eps",
+      "extension": "eps",
+      "description": "Encapsulated PostScript",
+      "mime": "application/postscript"
+    },
+    {
+      "format": "fodg",
+      "extension": "fodg",
+      "description": "OpenDocument Drawing (Flat XML)",
+      "mime": "application/octet-stream"
+    },
+    {
+      "format": "gif",
+      "extension": "gif",
+      "description": "Graphics Interchange Format",
+      "mime": "image/gif"
+    },
+    {
+      "format": "html",
+      "extension": "html",
+      "description": "HTML Document (OpenOffice.org Draw)",
+      "mime": "text/html"
+    },
+    {
+      "format": "jpg",
+      "extension": "jpg",
+      "description": "Joint Photographic Experts Group",
+      "mime": "image/jpeg"
+    },
+    {
+      "format": "met",
+      "extension": "met",
+      "description": "OS/2 Metafile",
+      "mime": "application/octet-stream"
+    },
+    {
+      "format": "odd",
+      "extension": "odd",
+      "description": "OpenDocument Drawing",
+      "mime": "application/octet-stream"
+    },
+    {
+      "format": "otg",
+      "extension": "otg",
+      "description": "OpenDocument Drawing Template",
+      "mime": "application/vnd.oasis.opendocument.graphics-template"
+    },
+    {
+      "format": "pbm",
+      "extension": "pbm",
+      "description": "Portable Bitmap",
+      "mime": "image/x-portable-bitmap"
+    },
+    {
+      "format": "pct",
+      "extension": "pct",
+      "description": "Mac Pict",
+      "mime": "image/x-pict"
+    },
+    {
+      "format": "pdf",
+      "extension": "pdf",
+      "description": "Portable Document Format",
+      "mime": "application/pdf"
+    },
+    {
+      "format": "pgm",
+      "extension": "pgm",
+      "description": "Portable Graymap",
+      "mime": "image/x-portable-graymap"
+    },
+    {
+      "format": "png",
+      "extension": "png",
+      "description": "Portable Network Graphic",
+      "mime": "image/png"
+    },
+    {
+      "format": "ppm",
+      "extension": "ppm",
+      "description": "Portable Pixelmap",
+      "mime": "image/x-portable-pixmap"
+    },
+    {
+      "format": "ras",
+      "extension": "ras",
+      "description": "Sun Raster Image",
+      "mime": "image/x-cmu-raster"
+    },
+    {
+      "format": "std",
+      "extension": "std",
+      "description": "OpenOffice.org 1.0 Drawing Template",
+      "mime": "application/vnd.sun.xml.draw.template"
+    },
+    {
+      "format": "svg",
+      "extension": "svg",
+      "description": "Scalable Vector Graphics",
+      "mime": "image/svg+xml"
+    },
+    {
+      "format": "svm",
+      "extension": "svm",
+      "description": "StarView Metafile",
+      "mime": "application/octet-stream"
+    },
+    {
+      "format": "swf",
+      "extension": "swf",
+      "description": "Macromedia Flash (SWF)",
+      "mime": "application/x-shockwave-flash"
+    },
+    {
+      "format": "sxd",
+      "extension": "sxd",
+      "description": "OpenOffice.org 1.0 Drawing",
+      "mime": "application/vnd.sun.xml.draw"
+    },
+    {
+      "format": "sxd3",
+      "extension": "sxd",
+      "description": "StarDraw 3.0",
+      "mime": "application/vnd.sun.xml.draw"
+    },
+    {
+      "format": "sxd5",
+      "extension": "sxd",
+      "description": "StarDraw 5.0",
+      "mime": "application/vnd.sun.xml.draw"
+    },
+    {
+      "format": "sxw",
+      "extension": "sxw",
+      "description": "StarOffice XML (Draw)",
+      "mime": "application/vnd.sun.xml.writer"
+    },
+    {
+      "format": "tiff",
+      "extension": "tiff",
+      "description": "Tagged Image File Format",
+      "mime": "image/tiff"
+    },
+    {
+      "format": "vor",
+      "extension": "vor",
+      "description": "StarDraw 5.0 Template",
+      "mime": "application/vnd.stardivision.writer"
+    },
+    {
+      "format": "vor3",
+      "extension": "vor",
+      "description": "StarDraw 3.0 Template",
+      "mime": "application/vnd.stardivision.writer"
+    },
+    {
+      "format": "wmf",
+      "extension": "wmf",
+      "description": "Windows Metafile",
+      "mime": "application/x-msmetafile"
+    },
+    {
+      "format": "xhtml",
+      "extension": "xhtml",
+      "description": "XHTML",
+      "mime": "application/xhtml+xml"
+    },
+    {
+      "format": "xpm",
+      "extension": "xpm",
+      "description": "X PixMap",
+      "mime": "image/x-xpixmap"
+    }
+  ],
+  "presentation": [
+    {
+      "format": "bmp",
+      "extension": "bmp",
+      "description": "Windows Bitmap",
+      "mime": "image/bmp"
+    },
+    {
+      "format": "emf",
+      "extension": "emf",
+      "description": "Enhanced Metafile",
+      "mime": "application/x-msmetafile"
+    },
+    {
+      "format": "eps",
+      "extension": "eps",
+      "description": "Encapsulated PostScript",
+      "mime": "application/postscript"
+    },
+    {
+      "format": "fodp",
+      "extension": "fodp",
+      "description": "OpenDocument Presentation (Flat XML)",
+      "mime": "application/octet-stream"
+    },
+    {
+      "format": "gif",
+      "extension": "gif",
+      "description": "Graphics Interchange Format",
+      "mime": "image/gif"
+    },
+    {
+      "format": "html",
+      "extension": "html",
+      "description": "HTML Document (OpenOffice.org Impress)",
+      "mime": "text/html"
+    },
+    {
+      "format": "jpg",
+      "extension": "jpg",
+      "description": "Joint Photographic Experts Group",
+      "mime": "image/jpeg"
+    },
+    {
+      "format": "met",
+      "extension": "met",
+      "description": "OS/2 Metafile",
+      "mime": "application/octet-stream"
+    },
+    {
+      "format": "odg",
+      "extension": "odg",
+      "description": "ODF Drawing (Impress)",
+      "mime": "application/vnd.oasis.opendocument.graphics"
+    },
+    {
+      "format": "odp",
+      "extension": "odp",
+      "description": "ODF Presentation",
+      "mime": "application/vnd.oasis.opendocument.presentation"
+    },
+    {
+      "format": "otp",
+      "extension": "otp",
+      "description": "ODF Presentation Template",
+      "mime": "application/vnd.oasis.opendocument.presentation-template"
+    },
+    {
+      "format": "pbm",
+      "extension": "pbm",
+      "description": "Portable Bitmap",
+      "mime": "image/x-portable-bitmap"
+    },
+    {
+      "format": "pct",
+      "extension": "pct",
+      "description": "Mac Pict",
+      "mime": "image/x-pict"
+    },
+    {
+      "format": "pdf",
+      "extension": "pdf",
+      "description": "Portable Document Format",
+      "mime": "application/pdf"
+    },
+    {
+      "format": "pgm",
+      "extension": "pgm",
+      "description": "Portable Graymap",
+      "mime": "image/x-portable-graymap"
+    },
+    {
+      "format": "png",
+      "extension": "png",
+      "description": "Portable Network Graphic",
+      "mime": "image/png"
+    },
+    {
+      "format": "potm",
+      "extension": "potm",
+      "description": "Microsoft PowerPoint 2007/2010 XML Template",
+      "mime": "application/vnd.ms-powerpoint.template.macroenabled.12"
+    },
+    {
+      "format": "pot",
+      "extension": "pot",
+      "description": "Microsoft PowerPoint 97/2000/XP Template",
+      "mime": "application/vnd.ms-powerpoint"
+    },
+    {
+      "format": "ppm",
+      "extension": "ppm",
+      "description": "Portable Pixelmap",
+      "mime": "image/x-portable-pixmap"
+    },
+    {
+      "format": "pptx",
+      "extension": "pptx",
+      "description": "Microsoft PowerPoint 2007/2010 XML",
+      "mime": "application/vnd.openxmlformats-officedocument.presentationml.presentation"
+    },
+    {
+      "format": "pps",
+      "extension": "pps",
+      "description": "Microsoft PowerPoint 97/2000/XP (Autoplay)",
+      "mime": "application/vnd.ms-powerpoint"
+    },
+    {
+      "format": "ppt",
+      "extension": "ppt",
+      "description": "Microsoft PowerPoint 97/2000/XP",
+      "mime": "application/vnd.ms-powerpoint"
+    },
+    {
+      "format": "pwp",
+      "extension": "pwp",
+      "description": "PlaceWare",
+      "mime": "application/octet-stream"
+    },
+    {
+      "format": "ras",
+      "extension": "ras",
+      "description": "Sun Raster Image",
+      "mime": "image/x-cmu-raster"
+    },
+    {
+      "format": "sda",
+      "extension": "sda",
+      "description": "StarDraw 5.0 (OpenOffice.org Impress)",
+      "mime": "application/vnd.stardivision.draw"
+    },
+    {
+      "format": "sdd",
+      "extension": "sdd",
+      "description": "StarImpress 5.0",
+      "mime": "application/vnd.stardivision.impress"
+    },
+    {
+      "format": "sdd3",
+      "extension": "sdd",
+      "description": "StarDraw 3.0 (OpenOffice.org Impress)",
+      "mime": "application/vnd.stardivision.impress"
+    },
+    {
+      "format": "sdd4",
+      "extension": "sdd",
+      "description": "StarImpress 4.0",
+      "mime": "application/vnd.stardivision.impress"
+    },
+    {
+      "format": "sxd",
+      "extension": "sxd",
+      "description": "OpenOffice.org 1.0 Drawing (OpenOffice.org Impress)",
+      "mime": "application/vnd.sun.xml.draw"
+    },
+    {
+      "format": "sti",
+      "extension": "sti",
+      "description": "OpenOffice.org 1.0 Presentation Template",
+      "mime": "application/vnd.sun.xml.impress.template"
+    },
+    {
+      "format": "svg",
+      "extension": "svg",
+      "description": "Scalable Vector Graphics",
+      "mime": "image/svg+xml"
+    },
+    {
+      "format": "svm",
+      "extension": "svm",
+      "description": "StarView Metafile",
+      "mime": "application/octet-stream"
+    },
+    {
+      "format": "swf",
+      "extension": "swf",
+      "description": "Macromedia Flash (SWF)",
+      "mime": "application/x-shockwave-flash"
+    },
+    {
+      "format": "sxi",
+      "extension": "sxi",
+      "description": "OpenOffice.org 1.0 Presentation",
+      "mime": "application/vnd.sun.xml.impress"
+    },
+    {
+      "format": "tiff",
+      "extension": "tiff",
+      "description": "Tagged Image File Format",
+      "mime": "image/tiff"
+    },
+    {
+      "format": "uop",
+      "extension": "uop",
+      "description": "Unified Office Format presentation",
+      "mime": "application/octet-stream"
+    },
+    {
+      "format": "vor",
+      "extension": "vor",
+      "description": "StarImpress 5.0 Template",
+      "mime": "application/vnd.stardivision.writer"
+    },
+    {
+      "format": "vor3",
+      "extension": "vor",
+      "description": "StarDraw 3.0 Template (OpenOffice.org Impress)",
+      "mime": "application/vnd.stardivision.writer"
+    },
+    {
+      "format": "vor4",
+      "extension": "vor",
+      "description": "StarImpress 4.0 Template",
+      "mime": "application/vnd.stardivision.writer"
+    },
+    {
+      "format": "vor5",
+      "extension": "vor",
+      "description": "StarDraw 5.0 Template (OpenOffice.org Impress)",
+      "mime": "application/vnd.stardivision.writer"
+    },
+    {
+      "format": "wmf",
+      "extension": "wmf",
+      "description": "Windows Metafile",
+      "mime": "application/x-msmetafile"
+    },
+    {
+      "format": "xhtml",
+      "extension": "xml",
+      "description": "XHTML",
+      "mime": "application/xml"
+    },
+    {
+      "format": "xpm",
+      "extension": "xpm",
+      "description": "X PixMap",
+      "mime": "image/x-xpixmap"
+    }
+  ],
+  "spreadsheet": [
+    {
+      "format": "csv",
+      "extension": "csv",
+      "description": "Text CSV",
+      "mime": "text/csv"
+    },
+    {
+      "format": "dbf",
+      "extension": "dbf",
+      "description": "dBASE",
+      "mime": "application/octet-stream"
+    },
+    {
+      "format": "dif",
+      "extension": "dif",
+      "description": "Data Interchange Format",
+      "mime": "application/octet-stream"
+    },
+    {
+      "format": "fods",
+      "extension": "fods",
+      "description": "OpenDocument Spreadsheet (Flat XML)",
+      "mime": "application/octet-stream"
+    },
+    {
+      "format": "html",
+      "extension": "html",
+      "description": "HTML Document (OpenOffice.org Calc)",
+      "mime": "text/html"
+    },
+    {
+      "format": "ods",
+      "extension": "ods",
+      "description": "ODF Spreadsheet",
+      "mime": "application/vnd.oasis.opendocument.spreadsheet"
+    },
+    {
+      "format": "ooxml",
+      "extension": "xml",
+      "description": "Microsoft Excel 2003 XML",
+      "mime": "application/xml"
+    },
+    {
+      "format": "ots",
+      "extension": "ots",
+      "description": "ODF Spreadsheet Template",
+      "mime": "application/vnd.oasis.opendocument.spreadsheet-template"
+    },
+    {
+      "format": "pdf",
+      "extension": "pdf",
+      "description": "Portable Document Format",
+      "mime": "application/pdf"
+    },
+    {
+      "format": "pxl",
+      "extension": "pxl",
+      "description": "Pocket Excel",
+      "mime": "application/octet-stream"
+    },
+    {
+      "format": "sdc",
+      "extension": "sdc",
+      "description": "StarCalc 5.0",
+      "mime": "application/vnd.stardivision.calc"
+    },
+    {
+      "format": "sdc4",
+      "extension": "sdc",
+      "description": "StarCalc 4.0",
+      "mime": "application/vnd.stardivision.calc"
+    },
+    {
+      "format": "sdc3",
+      "extension": "sdc",
+      "description": "StarCalc 3.0",
+      "mime": "application/vnd.stardivision.calc"
+    },
+    {
+      "format": "slk",
+      "extension": "slk",
+      "description": "SYLK",
+      "mime": "application/octet-stream"
+    },
+    {
+      "format": "stc",
+      "extension": "stc",
+      "description": "OpenOffice.org 1.0 Spreadsheet Template",
+      "mime": "application/vnd.sun.xml.calc.template"
+    },
+    {
+      "format": "sxc",
+      "extension": "sxc",
+      "description": "OpenOffice.org 1.0 Spreadsheet",
+      "mime": "application/vnd.sun.xml.calc"
+    },
+    {
+      "format": "uos",
+      "extension": "uos",
+      "description": "Unified Office Format spreadsheet",
+      "mime": "application/octet-stream"
+    },
+    {
+      "format": "vor3",
+      "extension": "vor",
+      "description": "StarCalc 3.0 Template",
+      "mime": "application/vnd.stardivision.writer"
+    },
+    {
+      "format": "vor4",
+      "extension": "vor",
+      "description": "StarCalc 4.0 Template",
+      "mime": "application/vnd.stardivision.writer"
+    },
+    {
+      "format": "vor",
+      "extension": "vor",
+      "description": "StarCalc 5.0 Template",
+      "mime": "application/vnd.stardivision.writer"
+    },
+    {
+      "format": "xhtml",
+      "extension": "xhtml",
+      "description": "XHTML",
+      "mime": "application/xhtml+xml"
+    },
+    {
+      "format": "xls",
+      "extension": "xls",
+      "description": "Microsoft Excel 97/2000/XP",
+      "mime": "application/vnd.ms-excel"
+    },
+    {
+      "format": "xls5",
+      "extension": "xls",
+      "description": "Microsoft Excel 5.0",
+      "mime": "application/vnd.ms-excel"
+    },
+    {
+      "format": "xls95",
+      "extension": "xls",
+      "description": "Microsoft Excel 95",
+      "mime": "application/vnd.ms-excel"
+    },
+    {
+      "format": "xlt",
+      "extension": "xlt",
+      "description": "Microsoft Excel 97/2000/XP Template",
+      "mime": "application/vnd.ms-excel"
+    },
+    {
+      "format": "xlt5",
+      "extension": "xlt",
+      "description": "Microsoft Excel 5.0 Template",
+      "mime": "application/vnd.ms-excel"
+    },
+    {
+      "format": "xlt95",
+      "extension": "xlt",
+      "description": "Microsoft Excel 95 Template",
+      "mime": "application/vnd.ms-excel"
+    },
+    {
+      "format": "xlsx",
+      "extension": "xlsx",
+      "description": "Microsoft Excel 2007/2010 XML",
+      "mime": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    }
+  ]
+}

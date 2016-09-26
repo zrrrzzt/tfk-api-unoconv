@@ -21,9 +21,6 @@ COPY . /src
 # Change working directory
 WORKDIR "/src"
 
-# Add uploads directory
-RUN mkdir uploads
-
 # Install dependencies
 RUN npm install --production
 

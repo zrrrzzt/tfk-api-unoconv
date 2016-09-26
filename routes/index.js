@@ -1,9 +1,9 @@
 'use strict'
 
-var config = require('../config')
-var handlers = require('../handlers')
+const config = require('../config')
+const handlers = require('../handlers')
 
-var routes = [
+module.exports = [
   {
     method: 'POST',
     path: '/unoconv/{format}',
@@ -16,7 +16,12 @@ var routes = [
       },
       handler: handlers.handleUpload
     }
+  },
+  {
+    method: 'GET',
+    path: '/unoconv/formats',
+    config: {
+      handler: handlers.showCapabilities
+    }
   }
 ]
-
-module.exports = routes
