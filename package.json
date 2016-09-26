@@ -16,9 +16,9 @@
     "node": ">=4.5.0"
   },
   "scripts": {
-    "test": "standard && nsp check && tap --reporter=spec test/*.js",
+    "test": "standard && nsp check && tap --reporter=spec test/**/*.js",
     "coverage": "tap test/*.js --coverage",
-    "coveralls": "tap --cov --coverage-report=lcov test/*.js && cat coverage/lcov.info | coveralls",
+    "coveralls": "tap --cov --coverage-report=lcov test/**/*.js && cat coverage/lcov.info | coveralls",
     "start": "node standalone.js",
     "setup": "mkdir uploads && npm install && node setup.js",
     "standard-fix": "standard --fix"
