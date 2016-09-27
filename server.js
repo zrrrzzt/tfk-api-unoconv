@@ -1,10 +1,10 @@
 'use strict'
 
-var Hapi = require('hapi')
-var Inert = require('inert')
-var server = new Hapi.Server()
-var config = require('./config')
-var unoconvService = require('./index')
+const Hapi = require('hapi')
+const Inert = require('inert')
+const server = new Hapi.Server()
+const config = require('./config')
+const unoconvService = require('./index')
 
 server.connection({
   port: parseInt(config.SERVER_PORT, 10),
