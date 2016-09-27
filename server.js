@@ -30,18 +30,14 @@ server.register([
   }
 })
 
-function startServer () {
-  server.start(function () {
+module.exports.start = () => {
+  server.start(() => {
     console.log('Server running at:', server.info.uri)
   })
 }
 
-function stopServer () {
-  server.stop(function () {
+module.exports.stop = () => {
+  server.stop(() => {
     console.log('Server stopped')
   })
 }
-
-module.exports.start = startServer
-
-module.exports.stop = stopServer

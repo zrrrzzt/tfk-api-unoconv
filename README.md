@@ -25,7 +25,7 @@ See all possible conversions on the [unoconv website](http://dag.wiee.rs/home-ma
 API for the webservice is /unoconv/{format-to-convert-to} so a docx to pdf would be
 
 ```sh
-$ curl --form file=@myfile.docx http://192.168.99.100/unoconv/pdf > myfile.pdf
+ curl --form file=@myfile.docx http://192.168.99.100/unoconv/pdf > myfile.pdf
 ```
 
 ### Formats
@@ -33,6 +33,10 @@ $ curl --form file=@myfile.docx http://192.168.99.100/unoconv/pdf > myfile.pdf
 To see all possible formats for convertion visit ```/unoconv/formats```
 
 To see formats for a given type ```/unoconv/formats/{document|graphics|presentation|spreadsheet}```
+
+### Versions
+
+To see all versions of unoconv and dependencies lookup ```/unoconv/versions```
 
 ## Environment
 

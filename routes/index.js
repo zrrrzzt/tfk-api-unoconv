@@ -30,5 +30,12 @@ module.exports = [
     config: {
       handler: handlers.showFormat
     }
+  },
+  {
+    method: 'GET',
+    path: '/unoconv/versions',
+    config: {
+      handler: handlers.showVersions
+    }
   }
 ]

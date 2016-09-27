@@ -4,6 +4,7 @@ const fs = require('fs')
 const uuid = require('uuid')
 const unoconv = require('unoconv2')
 const formats = require('../lib/data/formats.json')
+const pkg = require('../package.json')
 
 module.exports.handleUpload = (request, reply) => {
   const convertToFormat = request.params.format
@@ -54,4 +55,15 @@ module.exports.showFormat = (request, reply) => {
   } else {
     reply(format)
   }
+}
+
+module.exports.showVersions = (request, reply) => {
+  let versions = {}
+  Object.keys(pkg.dependencies).forEach((item) => {
+    versions[item] = pkg.dependencies[item]
+  })
+  Object.keys(pkg.unoconv).forEach((item) => {
+    versions[item] = pkg.unoconv[item]
+  })
+  reply(versions)
 }
