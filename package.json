@@ -1,6 +1,6 @@
 {
   "name": "tfk-api-unoconv",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "description": "Unoconv as a webservice",
   "author": {
     "name": "Geir Gåsodden",

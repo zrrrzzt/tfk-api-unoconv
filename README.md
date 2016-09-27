@@ -7,7 +7,7 @@ Unoconv as a webservice
 Build image
 
 ```sh
-$ docker build -t unoconv-weservice .
+$ docker build -t unoconv-webservice .
 ```
 
 Run image
