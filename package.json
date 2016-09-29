@@ -1,6 +1,6 @@
 {
   "name": "tfk-api-unoconv",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "Unoconv as a webservice",
   "author": {
     "name": "Geir Gåsodden",
@@ -13,7 +13,7 @@
   "homepage": "https://github.com/zrrrzzt/tfk-api-unoconv",
   "main": "index.js",
   "engines": {
-    "node": ">=4.5.0"
+    "node": ">=4.6.0"
   },
   "scripts": {
     "test": "standard && nsp check && tap --reporter=spec test/**/*.js",
