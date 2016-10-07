@@ -4,16 +4,13 @@
 #
 ###########################################################
 
-# Setting the base to nodejs 4.6.0
-FROM node:4.6.0-slim
+# Setting the base to docker-node-unoconv
+FROM zrrrzzt/docker-node-unoconv
 
 # Maintainer
 MAINTAINER Geir Gåsodden
 
 #### Begin setup ####
-
-# Installs git and unoconv
-RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y git unoconv && apt-get clean
 
 # Bundle app source
 COPY . /src
