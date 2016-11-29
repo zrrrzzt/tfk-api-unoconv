@@ -31,7 +31,7 @@
     "hapi": "15.2.0",
     "inert": "4.0.3",
     "unoconv2": "1.0.0",
-    "uuid": "2.0.3"
+    "uuid": "3.0.1"
   },
   "devDependencies": {
     "coveralls": "2.11.14",
