@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "hapi": "16.0.2",
-    "inert": "4.0.4",
+    "inert": "4.1.0",
     "unoconv2": "1.0.0",
     "uuid": "3.0.1"
   },
