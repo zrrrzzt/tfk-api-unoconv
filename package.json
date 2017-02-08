@@ -40,7 +40,7 @@
     "tap": "9.0.0"
   },
   "unoconv": {
-    "unoconv": "0.6",
+    "unoconv": "0.7",
     "python": "3.4.2",
     "LibreOffice": "4.3"
   }
