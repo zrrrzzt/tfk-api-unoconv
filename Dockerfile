@@ -5,7 +5,7 @@
 ###########################################################
 
 # Setting the base to docker-node-unoconv
-FROM zrrrzzt/docker-node-unoconv
+FROM zrrrzzt/docker-node-unoconv:4.7.3
 
 # Maintainer
 MAINTAINER Geir Gåsodden
