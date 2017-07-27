@@ -30,7 +30,7 @@
     "url": "git://github.com/zrrrzzt/tfk-api-unoconv.git"
   },
   "dependencies": {
-    "hapi": "16.4.3",
+    "hapi": "16.5.0",
     "inert": "4.2.1",
     "unoconv2": "1.0.0",
     "uuid": "3.0.1"
