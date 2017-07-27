@@ -25,16 +25,31 @@ module.exports.handleUpload = (request, reply) => {
 
     data.file.on('end', (err) => {
       if (err) {
+        console.error(err)
         reply(err)
       } else {
         unoconv.convert(fileNameTempOriginal, convertToFormat, (err, result) => {
           if (err) {
+            console.error(err)
+            fs.unlink(fileNameTempOriginal, error => {
+              if (error) {
+                console.error(error)
+              } else {
+                console.log(`${fileNameTempOriginal} deleted`)
+              }
+            })
             reply(err)
           } else {
             console.log('finished converting')
             reply(result)
               .on('finish', () => {
-                fs.unlink(fileNameTempOriginal)
+                fs.unlink(fileNameTempOriginal, error => {
+                  if (error) {
+                    console.error(error)
+                  } else {
+                    console.log(`${fileNameTempOriginal} deleted`)
+                  }
+                })
               })
           }
         })

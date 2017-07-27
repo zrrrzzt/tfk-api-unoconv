@@ -1,11 +1,5 @@
-###########################################################
-#
-# Dockerfile for tfk-api-unoconv
-#
-###########################################################
-
 # Setting the base to docker-node-unoconv
-FROM zrrrzzt/docker-node-unoconv:4.7.3
+FROM telemark/docker-node-unoconv:8.2.1
 
 # Maintainer
 MAINTAINER Geir Gåsodden
