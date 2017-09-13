@@ -1,6 +1,6 @@
 {
   "name": "tfk-api-unoconv",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "private": true,
   "description": "Unoconv as a webservice",
   "author": {
@@ -15,7 +15,7 @@
   "homepage": "https://github.com/zrrrzzt/tfk-api-unoconv",
   "main": "index.js",
   "engines": {
-    "node": ">=8.2.1"
+    "node": ">=8.5.0"
   },
   "scripts": {
     "test": "standard && nsp check && tap --reporter=spec test/**/*.js",
@@ -33,7 +33,7 @@
     "hapi": "16.6.0",
     "inert": "4.2.1",
     "unoconv2": "1.0.0",
-    "uuid": "3.0.1"
+    "uuid": "3.1.0"
   },
   "devDependencies": {
     "coveralls": "2.13.1",

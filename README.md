@@ -2,6 +2,7 @@
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
 # tfk-api-unoconv
+
 Unoconv as a webservice
 
 ## Docker
@@ -58,4 +59,4 @@ $ docker run --env-file=docker.env -d -p 80:3000 --name unoconv-webservice unoco
 
 [MIT](LICENSE)
 
-![alt text](https://robots.kebabstudios.party/tfk-api-unoconv.png "Robohash image of tfk-api-unoconv")
+![tfk-api-unoconv](https://robots.kebabstudios.party/tfk-api-unoconv.png "Robohash image of tfk-api-unoconv")
