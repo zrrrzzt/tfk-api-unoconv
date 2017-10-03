@@ -39,7 +39,7 @@ To see formats for a given type ```/unoconv/formats/{document|graphics|presentat
 
 ### Versions
 
-To see all versions of unoconv and dependencies lookup ```/unoconv/versions```
+To see all versions of installed dependencies lookup ```/unoconv/versions```
 
 ## Environment
 

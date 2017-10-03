@@ -77,8 +77,5 @@ module.exports.showVersions = (request, reply) => {
   Object.keys(pkg.dependencies).forEach((item) => {
     versions[item] = pkg.dependencies[item]
   })
-  Object.keys(pkg.unoconv).forEach((item) => {
-    versions[item] = pkg.unoconv[item]
-  })
   reply(versions)
 }
