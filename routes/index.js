@@ -14,6 +14,10 @@ module.exports = [
         allow: 'multipart/form-data',
         maxBytes: parseInt(config.PAYLOAD_MAX_SIZE, 10)
       },
+      timeout: {
+        server: parseInt(config.TIMEOUT_SERVER, 10),
+        socket: parseInt(config.TIMEOUT_SOCKET, 10)
+      },
       handler: handlers.handleUpload
     }
   },

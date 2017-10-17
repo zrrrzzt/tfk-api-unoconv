@@ -1,5 +1,5 @@
 # Setting the base to docker-node-unoconv
-FROM telemark/docker-node-unoconv:8.6.0
+FROM telemark/docker-node-unoconv:8.7.0
 
 # Maintainer
 MAINTAINER Geir Gåsodden
@@ -18,6 +18,8 @@ RUN npm install --production
 # Env variables
 ENV SERVER_PORT 3000
 ENV PAYLOAD_MAX_SIZE 1048576
+ENV TIMEOUT_SERVER 120000
+ENV TIMEOUT_SOCKET 120000
 
 # Expose 3000
 EXPOSE 3000
