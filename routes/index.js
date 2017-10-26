@@ -41,5 +41,12 @@ module.exports = [
     config: {
       handler: handlers.showVersions
     }
+  },
+  {
+	  method: 'GET',
+	  path: '/healthz',
+	  config: {
+		handler: handlers.healthcheck
+	  }
   }
 ]
