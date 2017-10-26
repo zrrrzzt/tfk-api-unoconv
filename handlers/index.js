@@ -80,7 +80,6 @@ module.exports.showVersions = (request, reply) => {
   reply(versions)
 }
 
-
 module.exports.healthcheck = (request, reply) => {
-  reply("ok")
+  reply('ok')
 }

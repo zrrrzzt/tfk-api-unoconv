@@ -46,7 +46,7 @@ module.exports = [
     method: 'GET',
     path: '/healthz',
     config: {
-	    handler: handlers.healthcheck
-	  }
+      handler: handlers.healthcheck
+    }
   }
 ]
