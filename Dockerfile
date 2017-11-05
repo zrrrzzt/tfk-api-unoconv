@@ -1,5 +1,5 @@
 # Setting the base to docker-node-unoconv
-FROM telemark/docker-node-unoconv:8.8.1
+FROM telemark/docker-node-unoconv:8.9.0
 
 # Maintainer
 MAINTAINER Geir Gåsodden
