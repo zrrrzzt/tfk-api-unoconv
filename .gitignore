@@ -35,3 +35,6 @@ node_modules
 
 # Lockfiles
 package-lock.json
+
+# .env
+.env
