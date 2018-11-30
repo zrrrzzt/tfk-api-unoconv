@@ -81,5 +81,5 @@ module.exports.showVersions = (request, reply) => {
 }
 
 module.exports.healthcheck = (request, reply) => {
-  reply({uptime: process.uptime()})
+  reply({ uptime: process.uptime() })
 }
