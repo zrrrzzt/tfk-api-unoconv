@@ -15,7 +15,7 @@
   "homepage": "https://github.com/zrrrzzt/tfk-api-unoconv",
   "main": "index.js",
   "engines": {
-    "node": ">=8.9.4"
+    "node": ">=10.14.0"
   },
   "scripts": {
     "test": "standard && nsp check && tap --reporter=spec test/**/*.js",
