@@ -12,7 +12,8 @@ module.exports = [
         output: 'stream',
         parse: true,
         allow: 'multipart/form-data',
-        maxBytes: parseInt(config.PAYLOAD_MAX_SIZE, 10)
+        maxBytes: parseInt(config.PAYLOAD_MAX_SIZE, 10),
+        timeout: parseInt(config.PAYLOAD_TIMEOUT, 10)
       },
       timeout: {
         server: parseInt(config.TIMEOUT_SERVER, 10),

@@ -61,6 +61,8 @@ SERVER_PORT default is 3000
 
 PAYLOAD_MAX_SIZE default is 1048576 (1 MB)
 
+PAYLOAD_TIMEOUT default is 2 minutes (120 000 milliseconds)
+
 TIMEOUT_SERVER default is 2 minutes (120 000 milliseconds)
 
 TIMEOUT_SOCKET default is 2 minutes and 20 seconds (140 000 milliseconds)
