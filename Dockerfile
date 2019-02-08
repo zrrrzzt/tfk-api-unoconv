@@ -6,7 +6,7 @@ FROM telemark/docker-node-unoconv:10.14.0
 COPY . /src
 
 # Change working directory
-WORKDIR "/src"
+WORKDIR /src
 
 # Install dependencies
 RUN npm install --production
