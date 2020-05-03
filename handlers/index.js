@@ -1,7 +1,7 @@
 'use strict'
 
 const fs = require('fs')
-const uuid = require('uuid')
+const { v4: uuid } = require('uuid')
 const unoconv = require('unoconv2')
 const formats = require('../lib/data/formats.json')
 const pkg = require('../package.json')
@@ -12,7 +12,7 @@ module.exports.handleUpload = (request, reply) => {
   if (data.file) {
     const nameArray = data.file.hapi.filename.split('.')
     const fileEndingOriginal = nameArray.pop()
-    const temporaryName = uuid.v4()
+    const temporaryName = uuid()
     const pathPre = process.cwd() + '/uploads/' + temporaryName
     const fileNameTempOriginal = pathPre + '.' + fileEndingOriginal
     const file = fs.createWriteStream(fileNameTempOriginal)
@@ -73,7 +73,7 @@ module.exports.showFormat = (request, reply) => {
 }
 
 module.exports.showVersions = (request, reply) => {
-  let versions = {}
+  const versions = {}
   Object.keys(pkg.dependencies).forEach((item) => {
     versions[item] = pkg.dependencies[item]
   })
