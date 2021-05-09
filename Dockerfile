@@ -1,4 +1,4 @@
-FROM telemark/docker-node-unoconv:10.20.1
+FROM telemark/docker-node-unoconv:12.18.3
 
 #### Begin setup ####
 
